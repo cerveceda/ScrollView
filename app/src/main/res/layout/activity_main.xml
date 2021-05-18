@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnAbeja"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#81d8d0"
+                android:padding="50dp"
+                android:layout_gravity="center"
+                app:layout_constraintBottom_toTopOf="@+id/btnGato"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/abejita" />
+
+            <ImageButton
+        android:id="@+id/btnGato"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+                android:backgroundTint="#49678d"
+                android:padding="50dp"
+                android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnElefante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbeja"
+        app:srcCompat="@drawable/cat" />
+
+    <ImageButton
+        android:id="@+id/btnElefante"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2a6478"
+        android:padding="50dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnKoala"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGato"
+        app:srcCompat="@drawable/elephant" />
+
+    <ImageButton
+        android:id="@+id/btnKoala"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#bdecb6"
+        android:padding="50dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnLeon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnElefante"
+        app:srcCompat="@drawable/koala" />
+
+    <ImageButton
+        android:id="@+id/btnLeon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#a56d5d"
+        android:padding="50dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnPajaro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKoala"
+        app:srcCompat="@drawable/lion" />
+
+    <ImageButton
+        android:id="@+id/btnPajaro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#008080"
+        android:padding="50dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnVaca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeon"
+        app:srcCompat="@drawable/pajarito" />
+
+    <ImageButton
+        android:id="@+id/btnVaca"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#008000"
+        android:padding="50dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/btnZorro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPajaro"
+        app:srcCompat="@drawable/vaca" />
+
+    <ImageButton
+        android:id="@+id/btnZorro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#191919"
+        android:padding="50dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVaca"
+        app:srcCompat="@drawable/zorrito" />
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
